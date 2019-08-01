@@ -78,6 +78,8 @@ gem 'geocoder'
 
 gem 'figaro'
 
+gem 'rake', '12.3.2'
+
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
