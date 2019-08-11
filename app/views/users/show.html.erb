@@ -1,13 +1,23 @@
-<h1>Dashboard for <%= @user.email %></h1>
+<div class="booyah-box">
+  <div class="row">
+    <div class="col-4">
+      <%= image_tag 'user.png' %>
+    </div>
 
-<h3>Member since: <%= @user.created_at.strftime("%B %d, %Y") %></h3>
+    <div class="col-8">
+      <h1><%= @user.email %></h1>
 
-<h4><%= @user.comments.count %> total comments</h4>
-<h5><%= @user.comments.where(rating: '5_stars').count %> Five star ratings</h5>
-<h5><%= @user.comments.where(rating: '4_stars').count %> Four star ratings</h5>
-<h5><%= @user.comments.where(rating: '3_stars').count %> Three star ratings</h5>
-<h5><%= @user.comments.where(rating: '2_stars').count %> Two star ratings</h5>
-<h5><%= @user.comments.where(rating: '1_star').count %> One star ratings</h5>
+      <h3>Member since: <%= @user.created_at.strftime("%B %d, %Y") %></h3>
 
+      <h4><%= @user.comments.count %> total comments</h4>
+      <h5><%= @user.comments.where(rating: '5_stars').count %> Five star ratings</h5>
+      <h5><%= @user.comments.where(rating: '4_stars').count %> Four star ratings</h5>
+      <h5><%= @user.comments.where(rating: '3_stars').count %> Three star ratings</h5>
+      <h5><%= @user.comments.where(rating: '2_stars').count %> Two star ratings</h5>
+      <h5><%= @user.comments.where(rating: '1_star').count %> One star ratings</h5>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
 
 
