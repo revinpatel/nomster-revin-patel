@@ -78,7 +78,7 @@ gem 'geocoder'
 
 gem 'figaro'
 
-gem 'rake', '12.3.2'
+gem 'rake', '12.3.3'
 
 gem 'carrierwave', '~> 1.0'
 
